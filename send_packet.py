@@ -7,7 +7,7 @@ import time
 import os
 
 def tmp():  #用于生成随机体温
-    a=str(round(random.uniform(35.8, 37.2),1))
+    a=str(round(random.normalvariate(36.6, 0.189),1))
     return a
 url="http://ncp.suse.edu.cn/api/questionnaire/questionnaire/addMyAnswer"
 headers={
